@@ -33,7 +33,7 @@
   --ink:#2e241f;
   --muted:#6e625a;
   --shadow:0 20px 60px rgba(63,38,23,.13);
-  --texture-image:url("../images/textura.webp");
+  --texture-image:url("../images/textura.avif");
 }
 
 html{scroll-behavior:smooth;}
