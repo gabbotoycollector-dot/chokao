@@ -5,7 +5,7 @@ Proyecto web estático de CHOKAO preparado para publicarse en Cloudflare Workers
 ## Estructura
 
 - `CHOKAO_WEB/`: página, hojas de estilo, JavaScript, imágenes y tipografía.
-- `wrangler.jsonc`: configuración del Worker `chokaocacao`.
+- `wrangler.jsonc`: configuración del Worker `chokao`.
 - `package.json`: comandos locales y de despliegue.
 - `DEPLOYMENT.md`: guía de publicación.
 
@@ -25,4 +25,4 @@ npm install
 npm run deploy
 ```
 
-Las imágenes utilizadas por la página se optimizaron al formato AVIF para reducir el peso de descarga. Se actualizaron únicamente las rutas de esos recursos en el HTML/CSS y se corrigió el ancho inválido del contenedor de la imagen principal. La tipografía local WOFF2 está incluida. El ZIP fuente original sigue siendo el respaldo de todos los archivos y variantes originales.
+Las imágenes se sirven en WebP desde los originales: los PNG conservan su transparencia (hero, nuestra-esencia, producto-principal) y las fotos se exportan en alta calidad, con variantes `srcset` para pantallas retina. La tipografía local WOFF2 es el archivo completo (no un subconjunto).

@@ -1,6 +1,6 @@
 # Despliegue en Cloudflare Workers
 
-Este proyecto está preparado para el Worker `chokaocacao`.
+Este proyecto está preparado para el Worker `chokao`.
 
 ## Configuración
 
@@ -23,6 +23,6 @@ npm run deploy
 
 ## Conectar GitHub con Cloudflare
 
-En Cloudflare Dashboard, abre **Workers & Pages**, selecciona `chokaocacao` y conecta el repositorio `gabbotoycollector-dot/chokao` desde la configuración de Builds. Selecciona la rama `main` y usa los comandos indicados arriba. Autoriza la integración GitHub y completa la autenticación que solicite Cloudflare.
+En Cloudflare Dashboard, abre **Workers & Pages**, selecciona `chokao` y conecta el repositorio `gabbotoycollector-dot/chokao` desde la configuración de Builds. Selecciona la rama `main` y usa los comandos indicados arriba. Autoriza la integración GitHub y completa la autenticación que solicite Cloudflare.
 
 El repositorio ya incluye `wrangler.jsonc`; la publicación automática empieza cuando se autoriza y configura esa conexión en Cloudflare. El formulario de contacto sigue siendo demostrativo, como en el archivo fuente.
