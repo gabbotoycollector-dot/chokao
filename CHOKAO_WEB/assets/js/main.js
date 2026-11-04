@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   const navbar = document.querySelector(".chokao-navbar");
 
   window.addEventListener("scroll", () => {
@@ -12,7 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12 });
+  }, {
+    threshold: 0.12
+  });
 
   document.querySelectorAll(".reveal").forEach((element) => {
     observer.observe(element);
@@ -24,7 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", () => {
       const menu = document.getElementById("navbarChokao");
       const bsCollapse = bootstrap.Collapse.getInstance(menu);
-      if (bsCollapse) bsCollapse.hide();
+
+      if (bsCollapse) {
+        bsCollapse.hide();
+      }
     });
   });
+
 });
